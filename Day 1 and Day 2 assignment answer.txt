@@ -1,0 +1,35 @@
+ 2.Data Types  Wrapper Class Name   Memory size      Range
+
+   byte             Byte              1 byte      -128 to 127
+   short            Short             2 bytes     -32,768 to 32,767
+   int              Integer           4 bytes     -2,147,483,648 to 2,147,483,647
+   long             Long              8 bytes     -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+   float            Float             4 bytes
+   double           Double            8 bytes
+
+   char             Character         2 bytes
+   String           String         According to string size
+
+   bool             Boolean           1 byte
+
+3. Example of Pre increment operator: ++a
+   Example of Post increment operator: a++
+   Example of Pre decrement operator: --a
+   Example of Post decrement operator: a--
+
+5. String : String is a sequence of characters. But in java string is an object that represents sequence of character.
+   For example: String name="ram"//it is take 6 bytes
+                String name="ramakant"//16 bytes
+   first store string name is ram it will take memory size is 6 bytes. After that when it is changed to ramakant it's take 16 bytes that 
+   is not possible to store in the same memory location because size is different for that reason string is called as immutable. 
+
+6. String name1 = "ram";
+   String name2 = "ram";
+   above two strings are equal. First name1 ram is store in memory location. When name2 ram is assigned and try to stored in memory 
+   location then with the help of string pool both strings are store in same location because both strings are same. But if String name2 is
+   declear as new string("ram") then it will store in different location because it is declear as new string.New string will take space in 
+   heap memory.
+    
+8. In terms of speed, Java is faster than Python as it is a compiled language. It takes less time to execute a code.
+   Python is an interpreted language and it determines the type of data at run time which makes it slower comparatively.
