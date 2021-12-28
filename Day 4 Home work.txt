@@ -1,0 +1,65 @@
+Abstraction:  In Java, Data Abstraction is defined as the process of reducing the object to its essence so that only the necessary 
+characteristics are exposed to the users. Abstraction defines an object in terms of its properties (attributes), behavior (methods), 
+and interfaces (means of communicating with other objects).
+
+Is Abstract class related to Abstraction ? find it.
+
+Abstract class and abstraction both are different.
+
+Abstract class - Abstract classes/methods are created so that it can be implemented in its subclasses because the abstract class does 
+not know what to implement in the method but it knows that the method will exist in its subclass. So, while we creating subclass we need 
+to override the abstract method to provide its implementation.
+
+For example: 
+abstract class Bike
+{  
+  abstract void run();  
+}  
+class Honda4 extends Bike
+{  
+ void run()
+ {
+  System.out.println("running safely");
+ }  
+public static void main(String args[])
+{  
+ Bike obj = new Honda4();  
+ obj.run();  
+}
+}  
+ 
+Abstraction - It means hiding the implementation and showing only essential information.
+
+Interfaces also can have few things - what are those things can interfaces have apart from abstract methods?
+
+Interface only have abstract method and variable.It can't have a method body.only static and final variables can declare in interface.
+Abstract class have both abstract method and non-abstract method.
+
+Multiple Inheritance in Java:
+
+interface Printable
+{  
+void print();  
+}  
+interface Showable
+{  
+void show();  
+}  
+class A7 implements Printable,Showable
+{  
+ public void print()
+ {
+  System.out.println("Hello");
+ }  
+ public void show()
+ {
+  System.out.println("Welcome");
+ }  
+  
+public static void main(String args[])
+{  
+A7 obj = new A7();  
+obj.print();  
+obj.show();  
+}  
+}  
